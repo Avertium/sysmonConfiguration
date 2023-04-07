@@ -1,11 +1,12 @@
 <!--
-	   ____                           ___ ________________    _______ __
-	  / __/_ _____ __ _  ___  ___    / _ /_  __/_  __/ __/___/ ___/ //_/
-	 _\ \/ // (_-</  ' \/ _ \/ _ \  / __ |/ /   / /  > _/_ _/ /__/ ,<   
-	/___/\_, /___/_/_/_/\___/_//_/ /_/ |_/_/   /_/  |_____/ \___/_/|_|  
-		/___/                                                           
-	author:	ionstorm
-	project:	https://github.com/ion-storm/sysmon-config
+     _                 _   _                      _  _____ _____ ___    ____ _  __
+    / \__   _____ _ __| |_(_)_   _ _ __ ___      / \|_   _|_   _( _ )  / ___| |/ /
+   / _ \ \ / / _ \ '__| __| | | | | '_ ` _ \    / _ \ | |   | | / _ \/\ |   | ' / 
+  / ___ \ V /  __/ |  | |_| | |_| | | | | | |  / ___ \| |   | || (_>  < |___| . \ 
+ /_/   \_\_/ \___|_|   \__|_|\__,_|_| |_| |_| /_/   \_\_|   |_| \___/\/\____|_|\_\
+                                                                                                                                  
+	author:	Christian Crank (Forked from https://github.com/ion-storm/sysmon-config, and using snippets from https://github.com/SwiftOnSecurity/sysmon-config as well as https://github.com/Neo23x0/sysmon-config)
+	project:	https://github.com/TerraVerde/sysmonConfiguration
 	license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
 	Methodology: Detect the Most Techniques per Data source in MITRE ATT&CK.
 				 Provide Visibility into Forensic Artifact Events for UEBA.

@@ -5150,7 +5150,9 @@
 		</FileCreate>
 		<FileCreate onmatch="exclude">
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
 			<Image condition="begin with">C:\Program Files\LogRhythm\LogRhythm System Monitor\</Image>
+			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
 		</FileCreate>
 	</RuleGroup>
 	<!--SYSMON EVENT ID 12 & 13 & 14 : REGISTRY MODIFICATION [RegistryEvent]-->

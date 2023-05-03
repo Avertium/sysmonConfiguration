@@ -6752,6 +6752,8 @@
 	<RuleGroup name="RG=DNS Query Excludes" groupRelation="or">
 		<DnsQuery onmatch="exclude">
 			<!-- Image Exclusions -->
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Program Files\LogRhythm\LogRhythm System Monitor\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\Admin Arsenal\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\CheckPoint\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\Fortinet\</Image>

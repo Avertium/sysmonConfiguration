@@ -2879,6 +2879,11 @@
 	</RuleGroup>
 	<RuleGroup name="RG=NetworkConnect Exclude Group" groupRelation="or">
 		<NetworkConnect onmatch="exclude">
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
+			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
+			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
+			<Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
 			<Protocol condition="contains">udp</Protocol>
 			<Rule name="exclude interprocess communications with localhost" groupRelation="and">
 				<Image condition="contains any">System;svchost.exe;oracle.exe;apache.exe;java.exe;php-cgi.exe;w3wp.exe;httpd;ServerManager.exe;unknown process;sql;wscript;cscript;schtasks;at.exe;reg.exe;C:\Windows\System32\find.exe</Image>
@@ -5151,8 +5156,9 @@
 		<FileCreate onmatch="exclude">
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
-			<Image condition="begin with">C:\Program Files\LogRhythm\LogRhythm System Monitor\</Image>
+			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
 			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
+			<Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
 		</FileCreate>
 	</RuleGroup>
 	<!--SYSMON EVENT ID 12 & 13 & 14 : REGISTRY MODIFICATION [RegistryEvent]-->

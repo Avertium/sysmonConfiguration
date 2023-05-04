@@ -2880,6 +2880,7 @@
 	<RuleGroup name="RG=NetworkConnect Exclude Group" groupRelation="or">
 		<NetworkConnect onmatch="exclude">
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Program Files\Microsoft Monitoring Agent\Agent\</Image>
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
 			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
 			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
@@ -5159,7 +5160,8 @@
 			<TargetFilename condition="end with">.xml</TargetFilename>
 		</FileCreate>
 		<FileCreate onmatch="exclude">
-			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Program Files\Microsoft Monitoring Agent\Agent\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsof t.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
 			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
 			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
@@ -6773,6 +6775,7 @@
 			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
 			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
 			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
+			<Image condition="begin with">C:\Program Files\Microsoft Monitoring Agent\Agent\</Image>
 			<Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
 			<Image condition="begin with">C:\Program Files (x86)\Admin Arsenal\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\CheckPoint\</Image>

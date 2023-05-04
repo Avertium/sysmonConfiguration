@@ -3090,6 +3090,11 @@
 			<Image condition="end with">\git.exe</Image>
 			<Image condition="end with">Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe</Image>
 			<Image condition="begin with">C:\ProgramData\Lenovo\ImController\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
+			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
+			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
+			<Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
 		</ProcessTerminate>
 	</RuleGroup>
 	<!--SYSMON EVENT ID 6 : DRIVER LOADED INTO KERNEL [DriverLoad]-->
@@ -6764,6 +6769,11 @@
 	<RuleGroup name="RG=DNS Query Excludes" groupRelation="or">
 		<DnsQuery onmatch="exclude">
 			<!-- Image Exclusions -->
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.Azure.Monitor.AzureMonitorWindowsAgent\</Image>
+			<Image condition="begin with">C:\Packages\Plugins\Microsoft.EnterpriseCloud.Monitoring.MicrosoftMonitoringAgent\</Image>
+			<Image condition="begin with">C:\Program Files\LogRhythm\</Image>
+			<Image condition="begin with">C:\Program Files\osquery\osqueryd\</Image>
+			<Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
 			<Image condition="begin with">C:\Program Files (x86)\Admin Arsenal\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\CheckPoint\</Image>
 			<Image condition="begin with">C:\Program Files (x86)\Fortinet\</Image>
